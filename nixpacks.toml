@@ -6,6 +6,7 @@ cmds = ["npm ci --include=dev"]
 
 [phases.build]
 cmds = ["npm run build"]
+cacheDirectories = ["node_modules/.cache", ".next/cache"]
 
 [start]
 cmd = "npm start"
