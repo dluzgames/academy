@@ -1,0 +1,2402 @@
+[
+    {
+        "id": "global-1",
+        "name": "Chicken Breast, grilled",
+        "calories": 165,
+        "protein": 31,
+        "carbs": 0,
+        "fats": 3.6
+    },
+    {
+        "id": "global-2",
+        "name": "Chicken Thigh, grilled",
+        "calories": 209,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 10.9
+    },
+    {
+        "id": "global-3",
+        "name": "Chicken Wing, fried",
+        "calories": 290,
+        "protein": 26.1,
+        "carbs": 8.2,
+        "fats": 17.4
+    },
+    {
+        "id": "global-4",
+        "name": "Chicken Drumstick, roasted",
+        "calories": 172,
+        "protein": 28.3,
+        "carbs": 0,
+        "fats": 5.7
+    },
+    {
+        "id": "global-5",
+        "name": "Turkey Breast, roasted",
+        "calories": 135,
+        "protein": 30,
+        "carbs": 0,
+        "fats": 0.7
+    },
+    {
+        "id": "global-6",
+        "name": "Ground Beef (90% lean)",
+        "calories": 176,
+        "protein": 20,
+        "carbs": 0,
+        "fats": 10
+    },
+    {
+        "id": "global-7",
+        "name": "Ground Beef (80% lean)",
+        "calories": 254,
+        "protein": 17.2,
+        "carbs": 0,
+        "fats": 20
+    },
+    {
+        "id": "global-8",
+        "name": "Beef Steak, sirloin, grilled",
+        "calories": 206,
+        "protein": 26.1,
+        "carbs": 0,
+        "fats": 10.6
+    },
+    {
+        "id": "global-9",
+        "name": "Beef Steak, ribeye, grilled",
+        "calories": 291,
+        "protein": 24,
+        "carbs": 0,
+        "fats": 21
+    },
+    {
+        "id": "global-10",
+        "name": "Beef Steak, filet mignon",
+        "calories": 227,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 13
+    },
+    {
+        "id": "global-11",
+        "name": "Pork Chop, grilled",
+        "calories": 231,
+        "protein": 25.7,
+        "carbs": 0,
+        "fats": 13.5
+    },
+    {
+        "id": "global-12",
+        "name": "Pork Tenderloin, roasted",
+        "calories": 143,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 3.5
+    },
+    {
+        "id": "global-13",
+        "name": "Bacon, cooked",
+        "calories": 541,
+        "protein": 37,
+        "carbs": 1.4,
+        "fats": 41.8
+    },
+    {
+        "id": "global-14",
+        "name": "Ham, sliced",
+        "calories": 145,
+        "protein": 21,
+        "carbs": 1.5,
+        "fats": 5.5
+    },
+    {
+        "id": "global-15",
+        "name": "Lamb Chop, grilled",
+        "calories": 282,
+        "protein": 25.5,
+        "carbs": 0,
+        "fats": 19.4
+    },
+    {
+        "id": "global-16",
+        "name": "Salmon, Atlantic, baked",
+        "calories": 208,
+        "protein": 20.4,
+        "carbs": 0,
+        "fats": 13.4
+    },
+    {
+        "id": "global-17",
+        "name": "Tuna, canned in water",
+        "calories": 116,
+        "protein": 25.5,
+        "carbs": 0,
+        "fats": 0.8
+    },
+    {
+        "id": "global-18",
+        "name": "Tuna Steak, grilled",
+        "calories": 184,
+        "protein": 29.9,
+        "carbs": 0,
+        "fats": 6.3
+    },
+    {
+        "id": "global-19",
+        "name": "Shrimp, cooked",
+        "calories": 99,
+        "protein": 24,
+        "carbs": 0.2,
+        "fats": 0.3
+    },
+    {
+        "id": "global-20",
+        "name": "Cod, baked",
+        "calories": 105,
+        "protein": 23,
+        "carbs": 0,
+        "fats": 0.9
+    },
+    {
+        "id": "global-21",
+        "name": "Tilapia, baked",
+        "calories": 128,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 2.7
+    },
+    {
+        "id": "global-22",
+        "name": "Sardines, canned in oil",
+        "calories": 208,
+        "protein": 24.6,
+        "carbs": 0,
+        "fats": 11.5
+    },
+    {
+        "id": "global-23",
+        "name": "Mackerel, baked",
+        "calories": 262,
+        "protein": 24,
+        "carbs": 0,
+        "fats": 17.8
+    },
+    {
+        "id": "global-24",
+        "name": "Crab meat, cooked",
+        "calories": 97,
+        "protein": 19.4,
+        "carbs": 0,
+        "fats": 1.5
+    },
+    {
+        "id": "global-25",
+        "name": "Lobster, cooked",
+        "calories": 89,
+        "protein": 19,
+        "carbs": 0,
+        "fats": 0.5
+    },
+    {
+        "id": "global-26",
+        "name": "Egg, whole, boiled",
+        "calories": 155,
+        "protein": 12.6,
+        "carbs": 1.1,
+        "fats": 10.6
+    },
+    {
+        "id": "global-27",
+        "name": "Egg, scrambled",
+        "calories": 149,
+        "protein": 10.2,
+        "carbs": 1.6,
+        "fats": 11
+    },
+    {
+        "id": "global-28",
+        "name": "Egg White, cooked",
+        "calories": 52,
+        "protein": 10.9,
+        "carbs": 0.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-29",
+        "name": "Egg Yolk, cooked",
+        "calories": 322,
+        "protein": 15.9,
+        "carbs": 3.6,
+        "fats": 26.5
+    },
+    {
+        "id": "global-30",
+        "name": "Whole Milk",
+        "calories": 61,
+        "protein": 3.2,
+        "carbs": 4.8,
+        "fats": 3.3
+    },
+    {
+        "id": "global-31",
+        "name": "Skim Milk",
+        "calories": 34,
+        "protein": 3.4,
+        "carbs": 5,
+        "fats": 0.1
+    },
+    {
+        "id": "global-32",
+        "name": "Greek Yogurt, plain",
+        "calories": 97,
+        "protein": 9,
+        "carbs": 3.6,
+        "fats": 5
+    },
+    {
+        "id": "global-33",
+        "name": "Greek Yogurt, nonfat",
+        "calories": 59,
+        "protein": 10.2,
+        "carbs": 3.6,
+        "fats": 0.4
+    },
+    {
+        "id": "global-34",
+        "name": "Cottage Cheese (2%)",
+        "calories": 81,
+        "protein": 11.8,
+        "carbs": 4.3,
+        "fats": 2.3
+    },
+    {
+        "id": "global-35",
+        "name": "Cheddar Cheese",
+        "calories": 403,
+        "protein": 24.9,
+        "carbs": 1.3,
+        "fats": 33.1
+    },
+    {
+        "id": "global-36",
+        "name": "Mozzarella Cheese",
+        "calories": 280,
+        "protein": 27.5,
+        "carbs": 3.1,
+        "fats": 17.1
+    },
+    {
+        "id": "global-37",
+        "name": "Parmesan Cheese, grated",
+        "calories": 431,
+        "protein": 38.5,
+        "carbs": 4.1,
+        "fats": 28.6
+    },
+    {
+        "id": "global-38",
+        "name": "Cream Cheese",
+        "calories": 342,
+        "protein": 5.9,
+        "carbs": 4.1,
+        "fats": 34.2
+    },
+    {
+        "id": "global-39",
+        "name": "Butter, salted",
+        "calories": 717,
+        "protein": 0.9,
+        "carbs": 0.1,
+        "fats": 81.1
+    },
+    {
+        "id": "global-40",
+        "name": "Whey Protein Powder",
+        "calories": 380,
+        "protein": 80,
+        "carbs": 6,
+        "fats": 3
+    },
+    {
+        "id": "global-41",
+        "name": "Casein Protein Powder",
+        "calories": 370,
+        "protein": 77,
+        "carbs": 4,
+        "fats": 2.5
+    },
+    {
+        "id": "global-42",
+        "name": "White Rice, cooked",
+        "calories": 130,
+        "protein": 2.7,
+        "carbs": 28.2,
+        "fats": 0.3
+    },
+    {
+        "id": "global-43",
+        "name": "Brown Rice, cooked",
+        "calories": 123,
+        "protein": 2.7,
+        "carbs": 25.6,
+        "fats": 1
+    },
+    {
+        "id": "global-44",
+        "name": "Jasmine Rice, cooked",
+        "calories": 129,
+        "protein": 2.4,
+        "carbs": 28.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-45",
+        "name": "Basmati Rice, cooked",
+        "calories": 121,
+        "protein": 3.5,
+        "carbs": 25.2,
+        "fats": 0.4
+    },
+    {
+        "id": "global-46",
+        "name": "Quinoa, cooked",
+        "calories": 120,
+        "protein": 4.4,
+        "carbs": 21.3,
+        "fats": 1.9
+    },
+    {
+        "id": "global-47",
+        "name": "Oatmeal, cooked",
+        "calories": 71,
+        "protein": 2.5,
+        "carbs": 12,
+        "fats": 1.5
+    },
+    {
+        "id": "global-48",
+        "name": "Rolled Oats, dry",
+        "calories": 389,
+        "protein": 16.9,
+        "carbs": 66.3,
+        "fats": 6.9
+    },
+    {
+        "id": "global-49",
+        "name": "Pasta, spaghetti, cooked",
+        "calories": 158,
+        "protein": 5.8,
+        "carbs": 30.9,
+        "fats": 0.9
+    },
+    {
+        "id": "global-50",
+        "name": "Pasta, penne, cooked",
+        "calories": 157,
+        "protein": 5.8,
+        "carbs": 30.7,
+        "fats": 0.9
+    },
+    {
+        "id": "global-51",
+        "name": "Whole Wheat Pasta, cooked",
+        "calories": 124,
+        "protein": 5.3,
+        "carbs": 26.5,
+        "fats": 0.5
+    },
+    {
+        "id": "global-52",
+        "name": "Bread, white",
+        "calories": 265,
+        "protein": 9,
+        "carbs": 49,
+        "fats": 3.2
+    },
+    {
+        "id": "global-53",
+        "name": "Bread, whole wheat",
+        "calories": 247,
+        "protein": 13,
+        "carbs": 41,
+        "fats": 3.4
+    },
+    {
+        "id": "global-54",
+        "name": "Bagel, plain",
+        "calories": 257,
+        "protein": 10,
+        "carbs": 50.5,
+        "fats": 1.6
+    },
+    {
+        "id": "global-55",
+        "name": "Tortilla, wheat",
+        "calories": 312,
+        "protein": 8.1,
+        "carbs": 50.7,
+        "fats": 8.9
+    },
+    {
+        "id": "global-56",
+        "name": "Tortilla, corn",
+        "calories": 218,
+        "protein": 5.7,
+        "carbs": 44.6,
+        "fats": 2.9
+    },
+    {
+        "id": "global-57",
+        "name": "Croissant",
+        "calories": 406,
+        "protein": 8.2,
+        "carbs": 45.8,
+        "fats": 21
+    },
+    {
+        "id": "global-58",
+        "name": "English Muffin",
+        "calories": 227,
+        "protein": 8,
+        "carbs": 44.8,
+        "fats": 1.8
+    },
+    {
+        "id": "global-59",
+        "name": "Couscous, cooked",
+        "calories": 112,
+        "protein": 3.8,
+        "carbs": 23.2,
+        "fats": 0.2
+    },
+    {
+        "id": "global-60",
+        "name": "Bulgur, cooked",
+        "calories": 83,
+        "protein": 3.1,
+        "carbs": 18.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-61",
+        "name": "Sweet Potato, baked",
+        "calories": 90,
+        "protein": 2,
+        "carbs": 20.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-62",
+        "name": "Potato, baked with skin",
+        "calories": 93,
+        "protein": 2.5,
+        "carbs": 21.2,
+        "fats": 0.1
+    },
+    {
+        "id": "global-63",
+        "name": "Potato, mashed",
+        "calories": 83,
+        "protein": 1.9,
+        "carbs": 17.6,
+        "fats": 0.6
+    },
+    {
+        "id": "global-64",
+        "name": "French Fries",
+        "calories": 312,
+        "protein": 3.4,
+        "carbs": 41.4,
+        "fats": 14.7
+    },
+    {
+        "id": "global-65",
+        "name": "Broccoli, steamed",
+        "calories": 35,
+        "protein": 2.4,
+        "carbs": 7.2,
+        "fats": 0.4
+    },
+    {
+        "id": "global-66",
+        "name": "Spinach, raw",
+        "calories": 23,
+        "protein": 2.9,
+        "carbs": 3.6,
+        "fats": 0.4
+    },
+    {
+        "id": "global-67",
+        "name": "Spinach, cooked",
+        "calories": 23,
+        "protein": 3,
+        "carbs": 3.8,
+        "fats": 0.3
+    },
+    {
+        "id": "global-68",
+        "name": "Kale, raw",
+        "calories": 49,
+        "protein": 4.3,
+        "carbs": 8.8,
+        "fats": 0.9
+    },
+    {
+        "id": "global-69",
+        "name": "Lettuce, romaine",
+        "calories": 17,
+        "protein": 1.2,
+        "carbs": 3.3,
+        "fats": 0.3
+    },
+    {
+        "id": "global-70",
+        "name": "Tomato, raw",
+        "calories": 18,
+        "protein": 0.9,
+        "carbs": 3.9,
+        "fats": 0.2
+    },
+    {
+        "id": "global-71",
+        "name": "Cucumber, raw",
+        "calories": 15,
+        "protein": 0.7,
+        "carbs": 3.6,
+        "fats": 0.1
+    },
+    {
+        "id": "global-72",
+        "name": "Carrot, raw",
+        "calories": 41,
+        "protein": 0.9,
+        "carbs": 9.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-73",
+        "name": "Bell Pepper, red",
+        "calories": 31,
+        "protein": 1,
+        "carbs": 6,
+        "fats": 0.3
+    },
+    {
+        "id": "global-74",
+        "name": "Bell Pepper, green",
+        "calories": 20,
+        "protein": 0.9,
+        "carbs": 4.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-75",
+        "name": "Onion, raw",
+        "calories": 40,
+        "protein": 1.1,
+        "carbs": 9.3,
+        "fats": 0.1
+    },
+    {
+        "id": "global-76",
+        "name": "Garlic, raw",
+        "calories": 149,
+        "protein": 6.4,
+        "carbs": 33.1,
+        "fats": 0.5
+    },
+    {
+        "id": "global-77",
+        "name": "Mushrooms, white, raw",
+        "calories": 22,
+        "protein": 3.1,
+        "carbs": 3.3,
+        "fats": 0.3
+    },
+    {
+        "id": "global-78",
+        "name": "Zucchini, raw",
+        "calories": 17,
+        "protein": 1.2,
+        "carbs": 3.1,
+        "fats": 0.3
+    },
+    {
+        "id": "global-79",
+        "name": "Asparagus, cooked",
+        "calories": 22,
+        "protein": 2.4,
+        "carbs": 4.1,
+        "fats": 0.2
+    },
+    {
+        "id": "global-80",
+        "name": "Green Beans, cooked",
+        "calories": 35,
+        "protein": 1.8,
+        "carbs": 7.9,
+        "fats": 0.1
+    },
+    {
+        "id": "global-81",
+        "name": "Cauliflower, raw",
+        "calories": 25,
+        "protein": 1.9,
+        "carbs": 5,
+        "fats": 0.3
+    },
+    {
+        "id": "global-82",
+        "name": "Corn, sweet, cooked",
+        "calories": 96,
+        "protein": 3.4,
+        "carbs": 21,
+        "fats": 1.5
+    },
+    {
+        "id": "global-83",
+        "name": "Peas, green, cooked",
+        "calories": 84,
+        "protein": 5.4,
+        "carbs": 15.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-84",
+        "name": "Eggplant, cooked",
+        "calories": 35,
+        "protein": 0.8,
+        "carbs": 8.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-85",
+        "name": "Avocado",
+        "calories": 160,
+        "protein": 2,
+        "carbs": 8.5,
+        "fats": 14.7
+    },
+    {
+        "id": "global-86",
+        "name": "Banana",
+        "calories": 89,
+        "protein": 1.1,
+        "carbs": 22.8,
+        "fats": 0.3
+    },
+    {
+        "id": "global-87",
+        "name": "Apple, with skin",
+        "calories": 52,
+        "protein": 0.3,
+        "carbs": 13.8,
+        "fats": 0.2
+    },
+    {
+        "id": "global-88",
+        "name": "Orange",
+        "calories": 47,
+        "protein": 0.9,
+        "carbs": 11.8,
+        "fats": 0.1
+    },
+    {
+        "id": "global-89",
+        "name": "Strawberries",
+        "calories": 32,
+        "protein": 0.7,
+        "carbs": 7.7,
+        "fats": 0.3
+    },
+    {
+        "id": "global-90",
+        "name": "Blueberries",
+        "calories": 57,
+        "protein": 0.7,
+        "carbs": 14.5,
+        "fats": 0.3
+    },
+    {
+        "id": "global-91",
+        "name": "Grapes, red",
+        "calories": 69,
+        "protein": 0.7,
+        "carbs": 18.1,
+        "fats": 0.2
+    },
+    {
+        "id": "global-92",
+        "name": "Watermelon",
+        "calories": 30,
+        "protein": 0.6,
+        "carbs": 7.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-93",
+        "name": "Mango",
+        "calories": 60,
+        "protein": 0.8,
+        "carbs": 15,
+        "fats": 0.4
+    },
+    {
+        "id": "global-94",
+        "name": "Pineapple",
+        "calories": 50,
+        "protein": 0.5,
+        "carbs": 13.1,
+        "fats": 0.1
+    },
+    {
+        "id": "global-95",
+        "name": "Peach",
+        "calories": 39,
+        "protein": 0.9,
+        "carbs": 9.5,
+        "fats": 0.3
+    },
+    {
+        "id": "global-96",
+        "name": "Pear",
+        "calories": 57,
+        "protein": 0.4,
+        "carbs": 15.2,
+        "fats": 0.1
+    },
+    {
+        "id": "global-97",
+        "name": "Kiwi",
+        "calories": 61,
+        "protein": 1.1,
+        "carbs": 14.7,
+        "fats": 0.5
+    },
+    {
+        "id": "global-98",
+        "name": "Cherries, sweet",
+        "calories": 63,
+        "protein": 1.1,
+        "carbs": 16,
+        "fats": 0.2
+    },
+    {
+        "id": "global-99",
+        "name": "Raspberries",
+        "calories": 52,
+        "protein": 1.2,
+        "carbs": 11.9,
+        "fats": 0.7
+    },
+    {
+        "id": "global-100",
+        "name": "Grapefruit",
+        "calories": 42,
+        "protein": 0.8,
+        "carbs": 10.7,
+        "fats": 0.1
+    },
+    {
+        "id": "global-101",
+        "name": "Almonds",
+        "calories": 579,
+        "protein": 21.2,
+        "carbs": 21.6,
+        "fats": 49.9
+    },
+    {
+        "id": "global-102",
+        "name": "Walnuts",
+        "calories": 654,
+        "protein": 15.2,
+        "carbs": 13.7,
+        "fats": 65.2
+    },
+    {
+        "id": "global-103",
+        "name": "Cashews",
+        "calories": 553,
+        "protein": 18.2,
+        "carbs": 30.2,
+        "fats": 43.9
+    },
+    {
+        "id": "global-104",
+        "name": "Peanuts, dry roasted",
+        "calories": 585,
+        "protein": 23.7,
+        "carbs": 21.5,
+        "fats": 49.2
+    },
+    {
+        "id": "global-105",
+        "name": "Peanut Butter",
+        "calories": 588,
+        "protein": 25.1,
+        "carbs": 20,
+        "fats": 50.4
+    },
+    {
+        "id": "global-106",
+        "name": "Pistachios",
+        "calories": 562,
+        "protein": 20.2,
+        "carbs": 27.2,
+        "fats": 45.3
+    },
+    {
+        "id": "global-107",
+        "name": "Macadamia Nuts",
+        "calories": 718,
+        "protein": 7.9,
+        "carbs": 13.8,
+        "fats": 75.8
+    },
+    {
+        "id": "global-108",
+        "name": "Sunflower Seeds",
+        "calories": 584,
+        "protein": 20.8,
+        "carbs": 20,
+        "fats": 51.5
+    },
+    {
+        "id": "global-109",
+        "name": "Chia Seeds",
+        "calories": 486,
+        "protein": 16.5,
+        "carbs": 42.1,
+        "fats": 30.7
+    },
+    {
+        "id": "global-110",
+        "name": "Flaxseeds",
+        "calories": 534,
+        "protein": 18.3,
+        "carbs": 28.9,
+        "fats": 42.2
+    },
+    {
+        "id": "global-111",
+        "name": "Pumpkin Seeds",
+        "calories": 559,
+        "protein": 30.2,
+        "carbs": 10.7,
+        "fats": 49.1
+    },
+    {
+        "id": "global-112",
+        "name": "Hemp Seeds",
+        "calories": 553,
+        "protein": 31.6,
+        "carbs": 8.7,
+        "fats": 48.8
+    },
+    {
+        "id": "global-113",
+        "name": "Almond Butter",
+        "calories": 614,
+        "protein": 21,
+        "carbs": 18.8,
+        "fats": 55.5
+    },
+    {
+        "id": "global-114",
+        "name": "Black Beans, cooked",
+        "calories": 132,
+        "protein": 8.9,
+        "carbs": 23.7,
+        "fats": 0.5
+    },
+    {
+        "id": "global-115",
+        "name": "Kidney Beans, cooked",
+        "calories": 127,
+        "protein": 8.7,
+        "carbs": 22.8,
+        "fats": 0.5
+    },
+    {
+        "id": "global-116",
+        "name": "Chickpeas, cooked",
+        "calories": 164,
+        "protein": 8.9,
+        "carbs": 27.4,
+        "fats": 2.6
+    },
+    {
+        "id": "global-117",
+        "name": "Lentils, cooked",
+        "calories": 116,
+        "protein": 9,
+        "carbs": 20.1,
+        "fats": 0.4
+    },
+    {
+        "id": "global-118",
+        "name": "Hummus",
+        "calories": 166,
+        "protein": 7.9,
+        "carbs": 14.3,
+        "fats": 9.6
+    },
+    {
+        "id": "global-119",
+        "name": "Tofu, firm",
+        "calories": 76,
+        "protein": 8.1,
+        "carbs": 1.9,
+        "fats": 4.8
+    },
+    {
+        "id": "global-120",
+        "name": "Tempeh",
+        "calories": 192,
+        "protein": 20.3,
+        "carbs": 7.6,
+        "fats": 10.8
+    },
+    {
+        "id": "global-121",
+        "name": "Edamame, cooked",
+        "calories": 121,
+        "protein": 11.9,
+        "carbs": 8.9,
+        "fats": 5.2
+    },
+    {
+        "id": "global-122",
+        "name": "Soy Milk",
+        "calories": 33,
+        "protein": 2.8,
+        "carbs": 1.8,
+        "fats": 1.6
+    },
+    {
+        "id": "global-123",
+        "name": "Almond Milk, unsweetened",
+        "calories": 15,
+        "protein": 0.6,
+        "carbs": 0.3,
+        "fats": 1.2
+    },
+    {
+        "id": "global-124",
+        "name": "Oat Milk",
+        "calories": 47,
+        "protein": 1,
+        "carbs": 7,
+        "fats": 1.5
+    },
+    {
+        "id": "global-125",
+        "name": "Coconut Milk, canned",
+        "calories": 197,
+        "protein": 2.3,
+        "carbs": 6.3,
+        "fats": 21.3
+    },
+    {
+        "id": "global-126",
+        "name": "Olive Oil",
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-127",
+        "name": "Coconut Oil",
+        "calories": 862,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-128",
+        "name": "Canola Oil",
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-129",
+        "name": "Avocado Oil",
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-130",
+        "name": "Honey",
+        "calories": 304,
+        "protein": 0.3,
+        "carbs": 82.4,
+        "fats": 0
+    },
+    {
+        "id": "global-131",
+        "name": "Maple Syrup",
+        "calories": 260,
+        "protein": 0,
+        "carbs": 67,
+        "fats": 0.1
+    },
+    {
+        "id": "global-132",
+        "name": "Brown Sugar",
+        "calories": 380,
+        "protein": 0.1,
+        "carbs": 98.1,
+        "fats": 0
+    },
+    {
+        "id": "global-133",
+        "name": "White Sugar",
+        "calories": 387,
+        "protein": 0,
+        "carbs": 100,
+        "fats": 0
+    },
+    {
+        "id": "global-134",
+        "name": "Dark Chocolate (70-85%)",
+        "calories": 598,
+        "protein": 7.8,
+        "carbs": 45.9,
+        "fats": 42.6
+    },
+    {
+        "id": "global-135",
+        "name": "Milk Chocolate",
+        "calories": 535,
+        "protein": 7.6,
+        "carbs": 59.4,
+        "fats": 29.7
+    },
+    {
+        "id": "global-136",
+        "name": "Pizza, Margherita (slice)",
+        "calories": 266,
+        "protein": 11.4,
+        "carbs": 33,
+        "fats": 10.4
+    },
+    {
+        "id": "global-137",
+        "name": "Pizza, Pepperoni (slice)",
+        "calories": 298,
+        "protein": 12.3,
+        "carbs": 33.6,
+        "fats": 13.2
+    },
+    {
+        "id": "global-138",
+        "name": "Hamburger, classic",
+        "calories": 295,
+        "protein": 17,
+        "carbs": 24,
+        "fats": 14
+    },
+    {
+        "id": "global-139",
+        "name": "Cheeseburger",
+        "calories": 303,
+        "protein": 15.1,
+        "carbs": 28.2,
+        "fats": 14.1
+    },
+    {
+        "id": "global-140",
+        "name": "Hot Dog",
+        "calories": 290,
+        "protein": 10.3,
+        "carbs": 24.3,
+        "fats": 17.4
+    },
+    {
+        "id": "global-141",
+        "name": "Burrito, bean & cheese",
+        "calories": 206,
+        "protein": 7.9,
+        "carbs": 27.5,
+        "fats": 7.4
+    },
+    {
+        "id": "global-142",
+        "name": "Taco, beef",
+        "calories": 210,
+        "protein": 10.7,
+        "carbs": 20.6,
+        "fats": 10
+    },
+    {
+        "id": "global-143",
+        "name": "Sushi, California Roll (6 pcs)",
+        "calories": 255,
+        "protein": 9,
+        "carbs": 38,
+        "fats": 7
+    },
+    {
+        "id": "global-144",
+        "name": "Sushi, Salmon Nigiri (2 pcs)",
+        "calories": 117,
+        "protein": 8,
+        "carbs": 17,
+        "fats": 1.7
+    },
+    {
+        "id": "global-145",
+        "name": "Fried Rice",
+        "calories": 163,
+        "protein": 4.3,
+        "carbs": 22.1,
+        "fats": 6.3
+    },
+    {
+        "id": "global-146",
+        "name": "Pad Thai",
+        "calories": 191,
+        "protein": 7.9,
+        "carbs": 26.3,
+        "fats": 6.2
+    },
+    {
+        "id": "global-147",
+        "name": "Ramen Noodle Soup",
+        "calories": 188,
+        "protein": 4.9,
+        "carbs": 26.5,
+        "fats": 7.1
+    },
+    {
+        "id": "global-148",
+        "name": "Chicken Curry",
+        "calories": 175,
+        "protein": 13.1,
+        "carbs": 7.8,
+        "fats": 10.7
+    },
+    {
+        "id": "global-149",
+        "name": "Beef Stew",
+        "calories": 103,
+        "protein": 7.5,
+        "carbs": 7.9,
+        "fats": 4.7
+    },
+    {
+        "id": "global-150",
+        "name": "Caesar Salad",
+        "calories": 127,
+        "protein": 5.2,
+        "carbs": 7.3,
+        "fats": 9.3
+    },
+    {
+        "id": "global-151",
+        "name": "Grilled Cheese Sandwich",
+        "calories": 366,
+        "protein": 14.6,
+        "carbs": 27.9,
+        "fats": 22.7
+    },
+    {
+        "id": "global-152",
+        "name": "BLT Sandwich",
+        "calories": 282,
+        "protein": 11.6,
+        "carbs": 24.8,
+        "fats": 15.6
+    },
+    {
+        "id": "global-153",
+        "name": "Club Sandwich",
+        "calories": 246,
+        "protein": 16.4,
+        "carbs": 21.8,
+        "fats": 10.4
+    },
+    {
+        "id": "global-154",
+        "name": "Chicken Nuggets (6 pcs)",
+        "calories": 296,
+        "protein": 15.2,
+        "carbs": 18.3,
+        "fats": 18
+    },
+    {
+        "id": "global-155",
+        "name": "Fish and Chips",
+        "calories": 233,
+        "protein": 13.3,
+        "carbs": 23.1,
+        "fats": 10.3
+    },
+    {
+        "id": "global-156",
+        "name": "Falafel (3 pcs)",
+        "calories": 333,
+        "protein": 13.3,
+        "carbs": 31.8,
+        "fats": 17.8
+    },
+    {
+        "id": "global-157",
+        "name": "Gyros, lamb",
+        "calories": 217,
+        "protein": 12.4,
+        "carbs": 15.5,
+        "fats": 12.6
+    },
+    {
+        "id": "global-158",
+        "name": "Kebab, chicken",
+        "calories": 153,
+        "protein": 18.4,
+        "carbs": 3.6,
+        "fats": 7.3
+    },
+    {
+        "id": "global-159",
+        "name": "Lasagna, meat",
+        "calories": 135,
+        "protein": 8.4,
+        "carbs": 12,
+        "fats": 5.8
+    },
+    {
+        "id": "global-160",
+        "name": "Spaghetti Bolognese",
+        "calories": 131,
+        "protein": 6.9,
+        "carbs": 16.2,
+        "fats": 4.2
+    },
+    {
+        "id": "global-161",
+        "name": "Carbonara Pasta",
+        "calories": 191,
+        "protein": 8.5,
+        "carbs": 24,
+        "fats": 7.1
+    },
+    {
+        "id": "global-162",
+        "name": "Mac and Cheese",
+        "calories": 164,
+        "protein": 6.1,
+        "carbs": 17.1,
+        "fats": 7.9
+    },
+    {
+        "id": "global-163",
+        "name": "Chicken Tikka Masala",
+        "calories": 165,
+        "protein": 14.6,
+        "carbs": 5.7,
+        "fats": 9.8
+    },
+    {
+        "id": "global-164",
+        "name": "Butter Chicken",
+        "calories": 178,
+        "protein": 14.1,
+        "carbs": 5.5,
+        "fats": 11.2
+    },
+    {
+        "id": "global-165",
+        "name": "Dal (Lentil Curry)",
+        "calories": 104,
+        "protein": 5.2,
+        "carbs": 14.8,
+        "fats": 2.9
+    },
+    {
+        "id": "global-166",
+        "name": "Biryani, chicken",
+        "calories": 142,
+        "protein": 7.8,
+        "carbs": 17.9,
+        "fats": 4.5
+    },
+    {
+        "id": "global-167",
+        "name": "Naan Bread",
+        "calories": 262,
+        "protein": 8.7,
+        "carbs": 45.4,
+        "fats": 5.1
+    },
+    {
+        "id": "global-168",
+        "name": "Pita Bread",
+        "calories": 275,
+        "protein": 9.1,
+        "carbs": 55.7,
+        "fats": 1.2
+    },
+    {
+        "id": "global-169",
+        "name": "Spring Roll, fried",
+        "calories": 220,
+        "protein": 5.6,
+        "carbs": 26.7,
+        "fats": 10.3
+    },
+    {
+        "id": "global-170",
+        "name": "Dumplings, steamed (4 pcs)",
+        "calories": 210,
+        "protein": 8.5,
+        "carbs": 25,
+        "fats": 8.2
+    },
+    {
+        "id": "global-171",
+        "name": "Wonton Soup",
+        "calories": 71,
+        "protein": 4.6,
+        "carbs": 8.5,
+        "fats": 2
+    },
+    {
+        "id": "global-172",
+        "name": "Miso Soup",
+        "calories": 40,
+        "protein": 3.2,
+        "carbs": 4.8,
+        "fats": 1
+    },
+    {
+        "id": "global-173",
+        "name": "Tom Yum Soup",
+        "calories": 44,
+        "protein": 3.6,
+        "carbs": 4.2,
+        "fats": 1.5
+    },
+    {
+        "id": "global-174",
+        "name": "Minestrone Soup",
+        "calories": 66,
+        "protein": 3.5,
+        "carbs": 11.2,
+        "fats": 0.7
+    },
+    {
+        "id": "global-175",
+        "name": "Chicken Noodle Soup",
+        "calories": 62,
+        "protein": 3.4,
+        "carbs": 7.1,
+        "fats": 2.4
+    },
+    {
+        "id": "global-176",
+        "name": "Guacamole",
+        "calories": 160,
+        "protein": 2,
+        "carbs": 8.5,
+        "fats": 14.7
+    },
+    {
+        "id": "global-177",
+        "name": "Salsa",
+        "calories": 36,
+        "protein": 1.5,
+        "carbs": 7.5,
+        "fats": 0.2
+    },
+    {
+        "id": "global-178",
+        "name": "Tzatziki",
+        "calories": 54,
+        "protein": 3.3,
+        "carbs": 4,
+        "fats": 2.5
+    },
+    {
+        "id": "global-179",
+        "name": "Pesto Sauce",
+        "calories": 387,
+        "protein": 5.3,
+        "carbs": 6.2,
+        "fats": 38.3
+    },
+    {
+        "id": "global-180",
+        "name": "Soy Sauce",
+        "calories": 53,
+        "protein": 8.1,
+        "carbs": 4.9,
+        "fats": 0.1
+    },
+    {
+        "id": "global-181",
+        "name": "Granola",
+        "calories": 489,
+        "protein": 14.6,
+        "carbs": 64.4,
+        "fats": 20
+    },
+    {
+        "id": "global-182",
+        "name": "Granola Bar",
+        "calories": 471,
+        "protein": 10.1,
+        "carbs": 64.4,
+        "fats": 20.3
+    },
+    {
+        "id": "global-183",
+        "name": "Protein Bar, average",
+        "calories": 350,
+        "protein": 20,
+        "carbs": 35,
+        "fats": 12
+    },
+    {
+        "id": "global-184",
+        "name": "Trail Mix",
+        "calories": 462,
+        "protein": 13.4,
+        "carbs": 44.9,
+        "fats": 29.4
+    },
+    {
+        "id": "global-185",
+        "name": "Popcorn, air-popped",
+        "calories": 387,
+        "protein": 12.9,
+        "carbs": 77.9,
+        "fats": 4.5
+    },
+    {
+        "id": "global-186",
+        "name": "Rice Cakes",
+        "calories": 392,
+        "protein": 8.2,
+        "carbs": 81.5,
+        "fats": 3.4
+    },
+    {
+        "id": "global-187",
+        "name": "Crackers, whole wheat",
+        "calories": 437,
+        "protein": 8.8,
+        "carbs": 68.2,
+        "fats": 14.2
+    },
+    {
+        "id": "global-188",
+        "name": "Pretzels",
+        "calories": 380,
+        "protein": 9.2,
+        "carbs": 79.2,
+        "fats": 3.5
+    },
+    {
+        "id": "global-189",
+        "name": "Tortilla Chips",
+        "calories": 489,
+        "protein": 6.8,
+        "carbs": 63.5,
+        "fats": 23.4
+    },
+    {
+        "id": "global-190",
+        "name": "Potato Chips",
+        "calories": 536,
+        "protein": 7,
+        "carbs": 52.9,
+        "fats": 34.6
+    },
+    {
+        "id": "global-191",
+        "name": "Pancakes (2 medium)",
+        "calories": 227,
+        "protein": 6.4,
+        "carbs": 27.9,
+        "fats": 10.2
+    },
+    {
+        "id": "global-192",
+        "name": "Waffles (2 medium)",
+        "calories": 291,
+        "protein": 7.9,
+        "carbs": 32.9,
+        "fats": 14.1
+    },
+    {
+        "id": "global-193",
+        "name": "French Toast (2 slices)",
+        "calories": 245,
+        "protein": 9,
+        "carbs": 25.7,
+        "fats": 12
+    },
+    {
+        "id": "global-194",
+        "name": "Omelette, cheese (2 eggs)",
+        "calories": 252,
+        "protein": 16.3,
+        "carbs": 1.5,
+        "fats": 19.8
+    },
+    {
+        "id": "global-195",
+        "name": "Smoothie Bowl, acai",
+        "calories": 180,
+        "protein": 4,
+        "carbs": 34,
+        "fats": 5
+    },
+    {
+        "id": "global-196",
+        "name": "Overnight Oats",
+        "calories": 145,
+        "protein": 5.2,
+        "carbs": 25,
+        "fats": 2.8
+    },
+    {
+        "id": "global-197",
+        "name": "Creatine Monohydrate (5g)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+    },
+    {
+        "id": "global-198",
+        "name": "BCAA Powder (10g serving)",
+        "calories": 32,
+        "protein": 7,
+        "carbs": 1,
+        "fats": 0
+    },
+    {
+        "id": "global-199",
+        "name": "Pre-Workout Powder (1 scoop)",
+        "calories": 10,
+        "protein": 0,
+        "carbs": 2,
+        "fats": 0
+    },
+    {
+        "id": "global-200",
+        "name": "Mass Gainer Shake",
+        "calories": 620,
+        "protein": 32,
+        "carbs": 100,
+        "fats": 8
+    },
+    {
+        "id": "global-201",
+        "name": "Peito de Frango Grelhado",
+        "calories": 165,
+        "protein": 31,
+        "carbs": 0,
+        "fats": 3.6
+    },
+    {
+        "id": "global-202",
+        "name": "Coxa de Frango Assada",
+        "calories": 209,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 10.9
+    },
+    {
+        "id": "global-203",
+        "name": "Carne Moída Magra",
+        "calories": 176,
+        "protein": 20,
+        "carbs": 0,
+        "fats": 10
+    },
+    {
+        "id": "global-204",
+        "name": "Filé de Tilápia Grelhado",
+        "calories": 128,
+        "protein": 26,
+        "carbs": 0,
+        "fats": 2.7
+    },
+    {
+        "id": "global-205",
+        "name": "Ovo Cozido",
+        "calories": 155,
+        "protein": 12.6,
+        "carbs": 1.1,
+        "fats": 10.6
+    },
+    {
+        "id": "global-206",
+        "name": "Ovo Mexido",
+        "calories": 149,
+        "protein": 10.2,
+        "carbs": 1.6,
+        "fats": 11
+    },
+    {
+        "id": "global-207",
+        "name": "Clara de Ovo",
+        "calories": 52,
+        "protein": 10.9,
+        "carbs": 0.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-208",
+        "name": "Iogurte Grego Natural",
+        "calories": 97,
+        "protein": 9,
+        "carbs": 3.6,
+        "fats": 5
+    },
+    {
+        "id": "global-209",
+        "name": "Queijo Cottage",
+        "calories": 81,
+        "protein": 11.8,
+        "carbs": 4.3,
+        "fats": 2.3
+    },
+    {
+        "id": "global-210",
+        "name": "Queijo Mussarela",
+        "calories": 280,
+        "protein": 27.5,
+        "carbs": 3.1,
+        "fats": 17.1
+    },
+    {
+        "id": "global-211",
+        "name": "Whey Protein (1 scoop, 30g)",
+        "calories": 120,
+        "protein": 24,
+        "carbs": 2,
+        "fats": 1
+    },
+    {
+        "id": "global-212",
+        "name": "Arroz Branco Cozido",
+        "calories": 130,
+        "protein": 2.7,
+        "carbs": 28.2,
+        "fats": 0.3
+    },
+    {
+        "id": "global-213",
+        "name": "Arroz Integral Cozido",
+        "calories": 123,
+        "protein": 2.7,
+        "carbs": 25.6,
+        "fats": 1
+    },
+    {
+        "id": "global-214",
+        "name": "Batata Doce Assada",
+        "calories": 90,
+        "protein": 2,
+        "carbs": 20.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-215",
+        "name": "Aveia (flocos)",
+        "calories": 389,
+        "protein": 16.9,
+        "carbs": 66.3,
+        "fats": 6.9
+    },
+    {
+        "id": "global-216",
+        "name": "Pão Integral",
+        "calories": 247,
+        "protein": 13,
+        "carbs": 41,
+        "fats": 3.4
+    },
+    {
+        "id": "global-217",
+        "name": "Macarrão Integral Cozido",
+        "calories": 124,
+        "protein": 5.3,
+        "carbs": 26.5,
+        "fats": 0.5
+    },
+    {
+        "id": "global-218",
+        "name": "Quinoa Cozida",
+        "calories": 120,
+        "protein": 4.4,
+        "carbs": 21.3,
+        "fats": 1.9
+    },
+    {
+        "id": "global-219",
+        "name": "Brócolis Cozido no Vapor",
+        "calories": 35,
+        "protein": 2.4,
+        "carbs": 7.2,
+        "fats": 0.4
+    },
+    {
+        "id": "global-220",
+        "name": "Espinafre Cru",
+        "calories": 23,
+        "protein": 2.9,
+        "carbs": 3.6,
+        "fats": 0.4
+    },
+    {
+        "id": "global-221",
+        "name": "Abacate",
+        "calories": 160,
+        "protein": 2,
+        "carbs": 8.5,
+        "fats": 14.7
+    },
+    {
+        "id": "global-222",
+        "name": "Banana",
+        "calories": 89,
+        "protein": 1.1,
+        "carbs": 22.8,
+        "fats": 0.3
+    },
+    {
+        "id": "global-223",
+        "name": "Maçã",
+        "calories": 52,
+        "protein": 0.3,
+        "carbs": 13.8,
+        "fats": 0.2
+    },
+    {
+        "id": "global-224",
+        "name": "Amendoim Torrado",
+        "calories": 585,
+        "protein": 23.7,
+        "carbs": 21.5,
+        "fats": 49.2
+    },
+    {
+        "id": "global-225",
+        "name": "Pasta de Amendoim",
+        "calories": 588,
+        "protein": 25.1,
+        "carbs": 20,
+        "fats": 50.4
+    },
+    {
+        "id": "global-226",
+        "name": "Castanha de Caju",
+        "calories": 553,
+        "protein": 18.2,
+        "carbs": 30.2,
+        "fats": 43.9
+    },
+    {
+        "id": "global-227",
+        "name": "Azeite de Oliva",
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-228",
+        "name": "Óleo de Coco",
+        "calories": 862,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 100
+    },
+    {
+        "id": "global-229",
+        "name": "Mel",
+        "calories": 304,
+        "protein": 0.3,
+        "carbs": 82.4,
+        "fats": 0
+    },
+    {
+        "id": "global-230",
+        "name": "Chocolate Amargo 70%",
+        "calories": 598,
+        "protein": 7.8,
+        "carbs": 45.9,
+        "fats": 42.6
+    },
+    {
+        "id": "global-231",
+        "name": "Grão de Bico Cozido",
+        "calories": 164,
+        "protein": 8.9,
+        "carbs": 27.4,
+        "fats": 2.6
+    },
+    {
+        "id": "global-232",
+        "name": "Lentilha Cozida",
+        "calories": 116,
+        "protein": 9,
+        "carbs": 20.1,
+        "fats": 0.4
+    },
+    {
+        "id": "global-233",
+        "name": "Salmão Assado",
+        "calories": 208,
+        "protein": 20.4,
+        "carbs": 0,
+        "fats": 13.4
+    },
+    {
+        "id": "global-234",
+        "name": "Atum em Lata (água)",
+        "calories": 116,
+        "protein": 25.5,
+        "carbs": 0,
+        "fats": 0.8
+    },
+    {
+        "id": "global-235",
+        "name": "Camarão Cozido",
+        "calories": 99,
+        "protein": 24,
+        "carbs": 0.2,
+        "fats": 0.3
+    },
+    {
+        "id": "global-236",
+        "name": "Leite Integral",
+        "calories": 61,
+        "protein": 3.2,
+        "carbs": 4.8,
+        "fats": 3.3
+    },
+    {
+        "id": "global-237",
+        "name": "Leite Desnatado",
+        "calories": 34,
+        "protein": 3.4,
+        "carbs": 5,
+        "fats": 0.1
+    },
+    {
+        "id": "global-238",
+        "name": "Tapioca",
+        "calories": 332,
+        "protein": 0.5,
+        "carbs": 87.8,
+        "fats": 0.1
+    },
+    {
+        "id": "global-239",
+        "name": "Açaí (polpa pura)",
+        "calories": 58,
+        "protein": 0.8,
+        "carbs": 6.2,
+        "fats": 3.9
+    },
+    {
+        "id": "global-240",
+        "name": "Granola",
+        "calories": 489,
+        "protein": 14.6,
+        "carbs": 64.4,
+        "fats": 20
+    },
+    {
+        "id": "global-241",
+        "name": "Tofu Firme",
+        "calories": 76,
+        "protein": 8.1,
+        "carbs": 1.9,
+        "fats": 4.8
+    },
+    {
+        "id": "global-242",
+        "name": "Wrap de Frango",
+        "calories": 235,
+        "protein": 15.2,
+        "carbs": 24.3,
+        "fats": 8.5
+    },
+    {
+        "id": "global-243",
+        "name": "Salada Caesar",
+        "calories": 127,
+        "protein": 5.2,
+        "carbs": 7.3,
+        "fats": 9.3
+    },
+    {
+        "id": "global-244",
+        "name": "Sopa de Legumes",
+        "calories": 50,
+        "protein": 2,
+        "carbs": 9,
+        "fats": 0.5
+    },
+    {
+        "id": "global-245",
+        "name": "Caldo de Osso (Bone Broth)",
+        "calories": 17,
+        "protein": 3.5,
+        "carbs": 0.2,
+        "fats": 0.1
+    },
+    {
+        "id": "global-246",
+        "name": "Manteiga de Amêndoa",
+        "calories": 614,
+        "protein": 21,
+        "carbs": 18.8,
+        "fats": 55.5
+    },
+    {
+        "id": "global-247",
+        "name": "Sementes de Chia",
+        "calories": 486,
+        "protein": 16.5,
+        "carbs": 42.1,
+        "fats": 30.7
+    },
+    {
+        "id": "global-248",
+        "name": "Sementes de Linhaça",
+        "calories": 534,
+        "protein": 18.3,
+        "carbs": 28.9,
+        "fats": 42.2
+    },
+    {
+        "id": "global-249",
+        "name": "Semente de Abóbora",
+        "calories": 559,
+        "protein": 30.2,
+        "carbs": 10.7,
+        "fats": 49.1
+    },
+    {
+        "id": "global-250",
+        "name": "Manga",
+        "calories": 60,
+        "protein": 0.8,
+        "carbs": 15,
+        "fats": 0.4
+    },
+    {
+        "id": "global-251",
+        "name": "Morango",
+        "calories": 32,
+        "protein": 0.7,
+        "carbs": 7.7,
+        "fats": 0.3
+    },
+    {
+        "id": "global-252",
+        "name": "Melancia",
+        "calories": 30,
+        "protein": 0.6,
+        "carbs": 7.6,
+        "fats": 0.2
+    },
+    {
+        "id": "global-253",
+        "name": "Kiwi",
+        "calories": 61,
+        "protein": 1.1,
+        "carbs": 14.7,
+        "fats": 0.5
+    },
+    {
+        "id": "global-254",
+        "name": "Uva",
+        "calories": 69,
+        "protein": 0.7,
+        "carbs": 18.1,
+        "fats": 0.2
+    },
+    {
+        "id": "global-255",
+        "name": "Pêssego",
+        "calories": 39,
+        "protein": 0.9,
+        "carbs": 9.5,
+        "fats": 0.3
+    },
+    {
+        "id": "global-256",
+        "name": "Cottage Cheese, low fat",
+        "calories": 72,
+        "protein": 12.4,
+        "carbs": 2.7,
+        "fats": 1
+    },
+    {
+        "id": "global-257",
+        "name": "Ricotta Cheese",
+        "calories": 174,
+        "protein": 11.3,
+        "carbs": 3,
+        "fats": 13
+    },
+    {
+        "id": "global-258",
+        "name": "Feta Cheese",
+        "calories": 264,
+        "protein": 14.2,
+        "carbs": 4.1,
+        "fats": 21.3
+    },
+    {
+        "id": "global-259",
+        "name": "Swiss Cheese",
+        "calories": 380,
+        "protein": 26.9,
+        "carbs": 5.4,
+        "fats": 27.8
+    },
+    {
+        "id": "global-260",
+        "name": "Brie Cheese",
+        "calories": 334,
+        "protein": 20.8,
+        "carbs": 0.5,
+        "fats": 27.7
+    },
+    {
+        "id": "global-261",
+        "name": "Gouda Cheese",
+        "calories": 356,
+        "protein": 24.9,
+        "carbs": 2.2,
+        "fats": 27.4
+    },
+    {
+        "id": "global-262",
+        "name": "Blue Cheese",
+        "calories": 353,
+        "protein": 21.4,
+        "carbs": 2.3,
+        "fats": 28.7
+    },
+    {
+        "id": "global-263",
+        "name": "Heavy Cream",
+        "calories": 340,
+        "protein": 2.1,
+        "carbs": 2.8,
+        "fats": 36.1
+    },
+    {
+        "id": "global-264",
+        "name": "Sour Cream",
+        "calories": 198,
+        "protein": 2.4,
+        "carbs": 4.6,
+        "fats": 19.4
+    },
+    {
+        "id": "global-265",
+        "name": "Ice Cream, vanilla",
+        "calories": 207,
+        "protein": 3.5,
+        "carbs": 23.6,
+        "fats": 11
+    },
+    {
+        "id": "global-266",
+        "name": "Frozen Yogurt",
+        "calories": 159,
+        "protein": 3.9,
+        "carbs": 24.2,
+        "fats": 5.6
+    },
+    {
+        "id": "global-267",
+        "name": "Coconut Water",
+        "calories": 19,
+        "protein": 0.7,
+        "carbs": 3.7,
+        "fats": 0.2
+    },
+    {
+        "id": "global-268",
+        "name": "Orange Juice",
+        "calories": 45,
+        "protein": 0.7,
+        "carbs": 10.4,
+        "fats": 0.2
+    },
+    {
+        "id": "global-269",
+        "name": "Green Tea",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fats": 0
+    },
+    {
+        "id": "global-270",
+        "name": "Black Coffee",
+        "calories": 2,
+        "protein": 0.3,
+        "carbs": 0,
+        "fats": 0
+    },
+    {
+        "id": "global-271",
+        "name": "Cappuccino (with whole milk)",
+        "calories": 74,
+        "protein": 3.7,
+        "carbs": 7.4,
+        "fats": 3.3
+    },
+    {
+        "id": "global-272",
+        "name": "Latte (with whole milk)",
+        "calories": 95,
+        "protein": 4.9,
+        "carbs": 9.6,
+        "fats": 3.7
+    },
+    {
+        "id": "global-273",
+        "name": "Coca-Cola (330ml)",
+        "calories": 139,
+        "protein": 0,
+        "carbs": 35,
+        "fats": 0
+    },
+    {
+        "id": "global-274",
+        "name": "Protein Shake (average)",
+        "calories": 200,
+        "protein": 30,
+        "carbs": 10,
+        "fats": 5
+    },
+    {
+        "id": "global-275",
+        "name": "Electrolyte Drink",
+        "calories": 25,
+        "protein": 0,
+        "carbs": 6,
+        "fats": 0
+    },
+    {
+        "id": "global-276",
+        "name": "Duck Breast, roasted",
+        "calories": 201,
+        "protein": 23.5,
+        "carbs": 0,
+        "fats": 11.2
+    },
+    {
+        "id": "global-277",
+        "name": "Venison, roasted",
+        "calories": 158,
+        "protein": 30.2,
+        "carbs": 0,
+        "fats": 3.2
+    },
+    {
+        "id": "global-278",
+        "name": "Bison, ground, cooked",
+        "calories": 143,
+        "protein": 20.2,
+        "carbs": 0,
+        "fats": 7.2
+    },
+    {
+        "id": "global-279",
+        "name": "Veal Cutlet, grilled",
+        "calories": 172,
+        "protein": 31,
+        "carbs": 0,
+        "fats": 4.7
+    },
+    {
+        "id": "global-280",
+        "name": "Prosciutto",
+        "calories": 195,
+        "protein": 27,
+        "carbs": 0.7,
+        "fats": 8.6
+    },
+    {
+        "id": "global-281",
+        "name": "Salami",
+        "calories": 336,
+        "protein": 22.6,
+        "carbs": 1.2,
+        "fats": 26.4
+    },
+    {
+        "id": "global-282",
+        "name": "Pepperoni",
+        "calories": 504,
+        "protein": 22.5,
+        "carbs": 0,
+        "fats": 44.2
+    },
+    {
+        "id": "global-283",
+        "name": "Sausage, Italian",
+        "calories": 301,
+        "protein": 16.5,
+        "carbs": 3.6,
+        "fats": 24.8
+    },
+    {
+        "id": "global-284",
+        "name": "Chorizo",
+        "calories": 455,
+        "protein": 24.1,
+        "carbs": 1.9,
+        "fats": 38.3
+    },
+    {
+        "id": "global-285",
+        "name": "Beef Jerky",
+        "calories": 410,
+        "protein": 33.2,
+        "carbs": 11,
+        "fats": 25.6
+    },
+    {
+        "id": "global-286",
+        "name": "Paella",
+        "calories": 146,
+        "protein": 8.5,
+        "carbs": 17,
+        "fats": 4.7
+    },
+    {
+        "id": "global-287",
+        "name": "Risotto",
+        "calories": 133,
+        "protein": 3.7,
+        "carbs": 19.7,
+        "fats": 4.1
+    },
+    {
+        "id": "global-288",
+        "name": "Gnocchi",
+        "calories": 133,
+        "protein": 2.9,
+        "carbs": 27.1,
+        "fats": 1.1
+    },
+    {
+        "id": "global-289",
+        "name": "Ravioli, cheese",
+        "calories": 221,
+        "protein": 9.1,
+        "carbs": 31.2,
+        "fats": 6.3
+    },
+    {
+        "id": "global-290",
+        "name": "Pho (Vietnamese Soup)",
+        "calories": 215,
+        "protein": 15.3,
+        "carbs": 25.8,
+        "fats": 5.6
+    },
+    {
+        "id": "global-291",
+        "name": "Bibimbap",
+        "calories": 190,
+        "protein": 10,
+        "carbs": 26,
+        "fats": 5.2
+    },
+    {
+        "id": "global-292",
+        "name": "Kimchi",
+        "calories": 23,
+        "protein": 1.6,
+        "carbs": 3.6,
+        "fats": 0.5
+    },
+    {
+        "id": "global-293",
+        "name": "Sauerkraut",
+        "calories": 19,
+        "protein": 0.9,
+        "carbs": 4.3,
+        "fats": 0.1
+    },
+    {
+        "id": "global-294",
+        "name": "Bruschetta",
+        "calories": 277,
+        "protein": 8.2,
+        "carbs": 37.5,
+        "fats": 10.5
+    },
+    {
+        "id": "global-295",
+        "name": "Caprese Salad",
+        "calories": 148,
+        "protein": 9.1,
+        "carbs": 3.2,
+        "fats": 11.4
+    },
+    {
+        "id": "global-296",
+        "name": "Greek Salad",
+        "calories": 98,
+        "protein": 3.7,
+        "carbs": 6.5,
+        "fats": 6.7
+    },
+    {
+        "id": "global-297",
+        "name": "Tabbouleh",
+        "calories": 85,
+        "protein": 2.6,
+        "carbs": 14.2,
+        "fats": 2.3
+    },
+    {
+        "id": "global-298",
+        "name": "Coleslaw",
+        "calories": 69,
+        "protein": 0.7,
+        "carbs": 6.7,
+        "fats": 4.6
+    },
+    {
+        "id": "global-299",
+        "name": "Waldorf Salad",
+        "calories": 151,
+        "protein": 1.8,
+        "carbs": 10.8,
+        "fats": 11.7
+    },
+    {
+        "id": "global-300",
+        "name": "Clam Chowder",
+        "calories": 117,
+        "protein": 4.8,
+        "carbs": 12.7,
+        "fats": 5.3
+    }
+]
