@@ -22,7 +22,7 @@ import { LayoutDashboard, Table, Activity, Users, LogOut, Settings, FileText, X,
 import { BADGES } from '@/utils/constants';
 
 export default function Home() {
-  const { user, loading: authLoading, loginWithGoogle, logout } = useAuth();
+  const { user, loading: authLoading, login, signup, loginWithGoogle, logout } = useAuth();
   const {
     profiles,
     currentProfile,
@@ -68,7 +68,7 @@ export default function Home() {
   }
 
   if (!user) {
-    return <AuthScreen onLogin={loginWithGoogle} />;
+    return <AuthScreen onLogin={login} onSignup={signup} onGoogleLogin={loginWithGoogle} />;
   }
 
   if (viewMode === 'loading') {

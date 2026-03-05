@@ -1,19 +1,45 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { User, Activity } from 'lucide-react';
+import { Mail, Lock, User, ArrowRight, Activity } from 'lucide-react';
 
 interface AuthScreenProps {
-  onLogin: () => Promise<{ success: boolean; error?: string }>;
+  onLogin: (email: string, password: string) => Promise<{ success: boolean; error?: string }>;
+  onSignup: (name: string, email: string, password: string) => Promise<{ success: boolean; error?: string }>;
+  onGoogleLogin: () => Promise<{ success: boolean; error?: string }>;
 }
 
-export default function AuthScreen({ onLogin }: AuthScreenProps) {
+export default function AuthScreen({ onLogin, onSignup, onGoogleLogin }: AuthScreenProps) {
+  const [isLogin, setIsLogin] = useState(true);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError('');
+
+    if (!email || !password || (!isLogin && !name)) {
+      setError('Por favor, preencha todos os campos.');
+      return;
+    }
+
+    setLoading(true);
+    const result = isLogin
+      ? await onLogin(email, password)
+      : await onSignup(name, email, password);
+
+    if (!result.success && result.error) {
+      setError(result.error);
+    }
+    setLoading(false);
+  };
 
   const handleGoogleLogin = async () => {
     setError('');
     setLoading(true);
-    const result = await onLogin();
+    const result = await onGoogleLogin();
     if (!result.success && result.error) {
       setError(result.error);
     }
@@ -40,23 +66,94 @@ export default function AuthScreen({ onLogin }: AuthScreenProps) {
         </div>
 
         <div className="glass-panel p-8 rounded-3xl border border-zinc-800/50 shadow-2xl space-y-6">
-          <div className="text-center">
-            <h2 className="text-xl font-bold text-white mb-2">Acessar Sistema</h2>
-            <p className="text-zinc-400 text-sm">Faça login com sua conta Google para continuar</p>
-          </div>
-
           <AnimatePresence mode="wait">
-            {error && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                className="p-3 rounded-lg bg-red-500/10 border border-red-500/20 text-red-500 text-sm font-medium text-center"
+            <motion.form
+              key={isLogin ? 'login' : 'signup'}
+              initial={{ opacity: 0, x: isLogin ? -20 : 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: isLogin ? 20 : -20 }}
+              transition={{ duration: 0.2 }}
+              onSubmit={handleSubmit}
+              className="space-y-4"
+            >
+              <div className="text-center mb-6">
+                <h2 className="text-xl font-bold text-white mb-2">
+                  {isLogin ? 'Acessar Sistema' : 'Criar Conta'}
+                </h2>
+              </div>
+
+              {error && (
+                <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20 text-red-500 text-sm font-medium text-center">
+                  {error}
+                </div>
+              )}
+
+              {!isLogin && (
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">Nome Completo</label>
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <User size={18} className="text-zinc-500" />
+                    </div>
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl py-3 pl-10 pr-4 text-white placeholder-zinc-600 focus:outline-none focus:border-[#00FF80] focus:ring-1 focus:ring-[#00FF80] transition-all"
+                      placeholder="Seu nome"
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">Email</label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Mail size={18} className="text-zinc-500" />
+                  </div>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl py-3 pl-10 pr-4 text-white placeholder-zinc-600 focus:outline-none focus:border-[#00FF80] focus:ring-1 focus:ring-[#00FF80] transition-all"
+                    placeholder="seu@email.com"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">Senha</label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Lock size={18} className="text-zinc-500" />
+                  </div>
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl py-3 pl-10 pr-4 text-white placeholder-zinc-600 focus:outline-none focus:border-[#00FF80] focus:ring-1 focus:ring-[#00FF80] transition-all"
+                    placeholder="••••••••"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full py-4 mt-6 rounded-xl font-black uppercase tracking-wider flex items-center justify-center gap-2 bg-[#00FF80] text-black hover:bg-[#00CC66] transition-colors shadow-[0_0_20px_rgba(0,255,128,0.2)] disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {error}
-              </motion.div>
-            )}
+                {loading ? 'Aguarde...' : (isLogin ? 'Entrar' : 'Cadastrar')}
+                <ArrowRight size={18} />
+              </button>
+            </motion.form>
           </AnimatePresence>
+
+          <div className="relative flex items-center py-2">
+            <div className="flex-grow border-t border-zinc-800"></div>
+            <span className="flex-shrink-0 mx-4 text-zinc-600 text-xs font-bold uppercase tracking-widest">Ou</span>
+            <div className="flex-grow border-t border-zinc-800"></div>
+          </div>
 
           <button
             onClick={handleGoogleLogin}
@@ -69,8 +166,20 @@ export default function AuthScreen({ onLogin }: AuthScreenProps) {
               <path d="M5.26498 14.2949C5.02498 13.5699 4.88501 12.7999 4.88501 11.9999C4.88501 11.1999 5.01998 10.4299 5.26498 9.7049L1.275 6.60986C0.46 8.22986 0 10.0599 0 11.9999C0 13.9399 0.46 15.7699 1.28 17.3899L5.26498 14.2949Z" fill="#FBBC05" />
               <path d="M12.0004 24.0001C15.2404 24.0001 17.9654 22.935 19.9454 21.095L16.0804 18.095C15.0054 18.82 13.6204 19.245 12.0004 19.245C8.8704 19.245 6.21537 17.135 5.26537 14.29L1.27539 17.385C3.25539 21.31 7.3104 24.0001 12.0004 24.0001Z" fill="#34A853" />
             </svg>
-            {loading ? 'Entrando com Google...' : 'Entrar com Google'}
+            {loading ? 'Aguarde...' : 'Entrar com Google'}
           </button>
+
+          <div className="text-center mt-6">
+            <button
+              onClick={() => {
+                setIsLogin(!isLogin);
+                setError('');
+              }}
+              className="text-sm text-zinc-400 hover:text-white transition-colors"
+            >
+              {isLogin ? 'Não tem uma conta? Cadastre-se' : 'Já tem uma conta? Entre'}
+            </button>
+          </div>
         </div>
       </motion.div>
     </div>
