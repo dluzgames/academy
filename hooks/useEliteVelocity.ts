@@ -3,6 +3,8 @@ import { Profile, ViewMode, DailyLog, Meal } from '@/types';
 import { FASTING_PROTOCOLS } from '@/utils/constants';
 import { differenceInDays, startOfDay } from 'date-fns';
 import { calculateProteinTarget } from '@/utils/nutrition-logic';
+import { db } from '@/lib/firebase';
+import { collection, query, where, getDocs, setDoc, doc, deleteDoc } from 'firebase/firestore';
 
 export const useEliteVelocity = (userId?: string) => {
   const [profiles, setProfiles] = useState<Record<string, Profile>>({});
@@ -26,15 +28,16 @@ export const useEliteVelocity = (userId?: string) => {
 
     const fetchProfiles = async () => {
       try {
-        const res = await fetch(`/api/profiles?userId=${userId}`);
-        const data = await res.json();
-        if (data.success) {
-          setProfiles(data.profiles);
-          setViewMode(Object.keys(data.profiles).length === 0 ? 'onboarding' : 'profiles');
-        } else {
-          setProfiles({});
-          setViewMode('onboarding');
-        }
+        const q = query(collection(db, 'profiles'), where('userId', '==', userId));
+        const querySnapshot = await getDocs(q);
+
+        const fetchedProfiles: Record<string, Profile> = {};
+        querySnapshot.forEach((doc) => {
+          fetchedProfiles[doc.id] = doc.data() as Profile;
+        });
+
+        setProfiles(fetchedProfiles);
+        setViewMode(Object.keys(fetchedProfiles).length === 0 ? 'onboarding' : 'profiles');
       } catch (e) {
         console.error('Error fetching profiles', e);
         setProfiles({});
@@ -49,16 +52,11 @@ export const useEliteVelocity = (userId?: string) => {
 
   const saveProfile = useCallback(async (profile: Profile) => {
     if (!userId) return;
-    
+
     const profileWithUser = { ...profile, userId };
-    
+
     try {
-      await fetch('/api/profiles', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(profileWithUser),
-      });
-      
+      await setDoc(doc(db, 'profiles', profile.id), profileWithUser);
       setProfiles(prev => ({ ...prev, [profile.id]: profileWithUser }));
     } catch (e) {
       console.error('Error saving profile', e);
@@ -69,34 +67,25 @@ export const useEliteVelocity = (userId?: string) => {
     if (!currentProfileId || !userId) return;
 
     try {
-      const res = await fetch(`/api/profiles/${currentProfileId}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...partial, userId }),
-      });
-      const data = await res.json();
-      
-      if (data.success) {
-        setProfiles(prev => ({ ...prev, [currentProfileId]: data.profile }));
-      }
+      const updatedProfile = { ...profiles[currentProfileId], ...partial, userId };
+      await setDoc(doc(db, 'profiles', currentProfileId), updatedProfile);
+      setProfiles(prev => ({ ...prev, [currentProfileId]: updatedProfile }));
     } catch (e) {
       console.error('Error updating profile', e);
     }
-  }, [currentProfileId, userId]);
+  }, [currentProfileId, userId, profiles]);
 
   const deleteProfile = useCallback(async () => {
     if (!currentProfileId || !userId) return;
 
     try {
-      await fetch(`/api/profiles/${currentProfileId}?userId=${userId}`, {
-        method: 'DELETE',
-      });
-      
+      await deleteDoc(doc(db, 'profiles', currentProfileId));
+
       setProfiles(prev => {
         const { [currentProfileId]: removed, ...rest } = prev;
         return rest;
       });
-      
+
       setCurrentProfileId(null);
       setViewMode('profiles');
     } catch (e) {
@@ -122,13 +111,13 @@ export const useEliteVelocity = (userId?: string) => {
     const calculateFasting = () => {
       const now = new Date();
       const [startH, startM] = currentProfile.startHour.split(':').map(Number);
-      
+
       const protocol = FASTING_PROTOCOLS[currentProfile.protocol];
       if (!protocol) return;
 
       const eatingStart = new Date();
       eatingStart.setHours(startH, startM, 0, 0);
-      
+
       const eatingEnd = new Date(eatingStart);
       eatingEnd.setHours(eatingStart.getHours() + protocol.eat);
 
@@ -140,10 +129,10 @@ export const useEliteVelocity = (userId?: string) => {
         targetTime = eatingEnd;
       } else {
         if (now < eatingStart) {
-           targetTime = eatingStart;
+          targetTime = eatingStart;
         } else {
-           targetTime = new Date(eatingStart);
-           targetTime.setDate(targetTime.getDate() + 1);
+          targetTime = new Date(eatingStart);
+          targetTime.setDate(targetTime.getDate() + 1);
         }
       }
 
@@ -172,7 +161,7 @@ export const useEliteVelocity = (userId?: string) => {
     const checkReminders = () => {
       const now = new Date();
       const hours = now.getHours();
-      
+
       // Only remind between 12:00 and 21:00 to avoid late night/early morning spam
       if (hours >= 12 && hours < 21) {
         const log = currentProfile.dailyLogs[currentDayNumber];
@@ -185,7 +174,7 @@ export const useEliteVelocity = (userId?: string) => {
           if (!hasLoggedWorkout) missing.push('Treino');
           if (!hasLoggedWater) missing.push('Água');
           if (!hasLoggedProtein) missing.push('Proteína');
-          
+
           const message = `Missão em andamento! Você ainda não registrou: ${missing.join(', ')}. Mantenha a constância!`;
           setActiveReminder(message);
 
@@ -193,7 +182,7 @@ export const useEliteVelocity = (userId?: string) => {
           if (typeof window !== 'undefined' && 'Notification' in window) {
             if (Notification.permission === 'granted') {
               // We could add a throttle here, but for now simple trigger
-              new Notification('Elite Velocity', { 
+              new Notification('Elite Velocity', {
                 body: message,
                 icon: '/favicon.ico'
               });
@@ -220,7 +209,7 @@ export const useEliteVelocity = (userId?: string) => {
 
   const markDayComplete = useCallback((dayNum: number, weight?: number, maxSpeed?: number) => {
     if (!currentProfile) return;
-    
+
     const currentLog = currentProfile.dailyLogs[dayNum] || {
       completed: false,
       water: 0,
@@ -262,7 +251,7 @@ export const useEliteVelocity = (userId?: string) => {
 
     // Check Badges
     const newBadges = [...(currentProfile.badges || [])];
-    
+
     // First Step
     if (!newBadges.includes('first_step')) {
       newBadges.push('first_step');
@@ -462,7 +451,7 @@ export const useEliteVelocity = (userId?: string) => {
     };
 
     const currentNotes = currentLog.exerciseNotes || {};
-    
+
     const updatedLog = {
       ...currentLog,
       exerciseNotes: {
