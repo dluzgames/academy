@@ -27,11 +27,20 @@ export const useAuth = () => {
   const loginWithGoogle = async (): Promise<{ success: boolean; error?: string }> => {
     setLoading(true);
     try {
-      await signInWithPopup(auth, googleProvider);
-      return { success: true };
+      if (typeof window !== 'undefined' && 'Capacitor' in window) {
+        // Fallback for Capacitor environments
+        const { signInWithRedirect } = await import('firebase/auth');
+        await signInWithRedirect(auth, googleProvider);
+        return { success: true };
+      } else {
+        // Normal web popup
+        const { signInWithPopup } = await import('firebase/auth');
+        await signInWithPopup(auth, googleProvider);
+        return { success: true };
+      }
     } catch (error: any) {
       console.error(error);
-      return { success: false, error: error.message || 'Erro ao entrar com Google.' };
+      return { success: false, error: 'Ocorreu um erro. Verifique sua conexão com a internet.' };
     } finally {
       setLoading(false);
     }
