@@ -27,13 +27,20 @@ export const useAuth = () => {
   const loginWithGoogle = async (): Promise<{ success: boolean; error?: string }> => {
     setLoading(true);
     try {
-      if (typeof window !== 'undefined' && 'Capacitor' in window) {
-        // Fallback for Capacitor environments
-        const { signInWithRedirect } = await import('firebase/auth');
-        await signInWithRedirect(auth, googleProvider);
-        return { success: true };
+      if (typeof window !== 'undefined' && 'Capacitor' in window && (window as any).Capacitor.isNativePlatform()) {
+        const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
+        const { GoogleAuthProvider, signInWithCredential } = await import('firebase/auth');
+
+        const result = await FirebaseAuthentication.signInWithGoogle();
+
+        if (result.credential?.idToken) {
+          const credential = GoogleAuthProvider.credential(result.credential.idToken);
+          await signInWithCredential(auth, credential);
+          return { success: true };
+        } else {
+          throw new Error("No ID Token returned from Google Sign-In");
+        }
       } else {
-        // Normal web popup
         const { signInWithPopup } = await import('firebase/auth');
         await signInWithPopup(auth, googleProvider);
         return { success: true };
