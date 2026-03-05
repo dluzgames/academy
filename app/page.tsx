@@ -59,12 +59,21 @@ export default function Home() {
     return () => cancelAnimationFrame(frame);
   }, []);
 
+  const renderLoading = (message: string) => (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4 relative overflow-hidden">
+      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[#00FF80]/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
+      <Activity size={48} className="text-[#00FF80] animate-pulse mb-4" />
+      <p className="text-zinc-400 font-mono text-sm uppercase tracking-widest animate-pulse">{message}</p>
+    </div>
+  );
+
   if (!mounted) {
     return null;
   }
 
   if (authLoading) {
-    return null; // Removed opening/loading screen
+    return renderLoading('Conectando ao Firebase...');
   }
 
   if (!user) {
@@ -72,7 +81,7 @@ export default function Home() {
   }
 
   if (viewMode === 'loading') {
-    return null; // Removed opening/loading screen
+    return renderLoading('Sincronizando banco de dados...');
   }
 
   // Profiles Screen
@@ -114,10 +123,16 @@ export default function Home() {
   if (viewMode === 'onboarding') {
     return (
       <Onboarding
-        onFinish={(profile) => {
-          saveProfile(profile);
-          setCurrentProfileId(profile.id);
-          setViewMode('dashboard');
+        onFinish={async (profile) => {
+          setViewMode('loading');
+          const success = await saveProfile(profile);
+          if (success) {
+            setCurrentProfileId(profile.id);
+            setViewMode('dashboard');
+          } else {
+            alert('Falha ao salvar dados. Verifique a internet e tente novamente.');
+            setViewMode('onboarding');
+          }
         }}
       />
     );
@@ -400,5 +415,10 @@ export default function Home() {
     );
   }
 
-  return null;
+  return (
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4 relative overflow-hidden">
+      <Activity size={48} className="text-[#00FF80] animate-pulse mb-4" />
+      <p className="text-zinc-400 font-mono text-sm uppercase tracking-widest animate-pulse">Carregando painel...</p>
+    </div>
+  );
 }

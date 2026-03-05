@@ -50,16 +50,18 @@ export const useEliteVelocity = (userId?: string) => {
 
   const currentProfile = currentProfileId ? profiles[currentProfileId] : null;
 
-  const saveProfile = useCallback(async (profile: Profile) => {
-    if (!userId) return;
+  const saveProfile = useCallback(async (profile: Profile): Promise<boolean> => {
+    if (!userId) return false;
 
     const profileWithUser = { ...profile, userId };
 
     try {
       await setDoc(doc(db, 'profiles', profile.id), profileWithUser);
       setProfiles(prev => ({ ...prev, [profile.id]: profileWithUser }));
+      return true;
     } catch (e) {
       console.error('Error saving profile', e);
+      return false;
     }
   }, [userId]);
 
