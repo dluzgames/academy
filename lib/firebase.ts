@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBbAW88zODKhCryqWqDTOH5MhWulSk41x8",
-    authDomain: "elite-velocity-dluz.firebaseapp.com",
-    projectId: "elite-velocity-dluz",
-    storageBucket: "elite-velocity-dluz.firebasestorage.app",
-    messagingSenderId: "321033009463",
-    appId: "1:321033009463:web:3d49cf4f0ff0b0ab8e82b2"
+    apiKey: "AIzaSyAkWAj9lIEvkYFSAHX10vjINWq-jOEGBPQ",
+    authDomain: "elite-velocity-v2-dluz.firebaseapp.com",
+    projectId: "elite-velocity-v2-dluz",
+    storageBucket: "elite-velocity-v2-dluz.firebasestorage.app",
+    messagingSenderId: "50663781652",
+    appId: "1:50663781652:web:3e1ea74744b89dc9b63e01"
 };
 
 // Initialize Firebase
